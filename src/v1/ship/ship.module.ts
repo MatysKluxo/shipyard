@@ -1,6 +1,6 @@
-import { Module } from '@nestjs/common';
-import { ShipService } from './ship.service';
-import { ShipController } from './ship.controller';
+import { Module } from "@nestjs/common";
+import { ShipService } from "./ship.service";
+import { ShipController } from "./ship.controller";
 
 @Module({
   providers: [ShipService],
