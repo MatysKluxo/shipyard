@@ -6,6 +6,11 @@ Pirate shipyard
 
 You can feel the power of adding new ships to mighty pirate fleet
 
+---
+#### Docs: "[baseUrl]/v1/docs"
+
+---
+
 ## Installation
 
 ```bash
