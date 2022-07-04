@@ -1,6 +1,15 @@
 import { IsString, MaxLength, MinLength } from "class-validator";
+import { ApiProperty } from "@nestjs/swagger";
 
 export class AddShipDto {
+  @ApiProperty({
+    maxLength: 50,
+    minLength: 3,
+    type: String,
+    description: "Name of the ship",
+    example: "Ghost of Black Widow",
+    required: true
+  })
   @IsString({
     message: "Ship name must be a string..."
   })
@@ -14,6 +23,13 @@ export class AddShipDto {
   })
   name: string;
 
+  @ApiProperty({
+    maxLength: 10,
+    type: String,
+    description: "Speed of the ship",
+    example: "64",
+    required: true
+  })
   @IsString({
     message: "Set speed as a string"
   })
